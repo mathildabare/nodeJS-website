@@ -1,3 +1,5 @@
 exports.contactpage = (req, res) => {
-    res.render('home')
-}
+    console.log("contact-page");
+  
+    res.render("contact");
+  };
