@@ -5,7 +5,8 @@
 
 /******  Déclarations Constantes ********/
 
-
+const pw = document.getElementById('pw')
+const pwConfirm = document.getElementById('pw-confirm')
 
 
 
