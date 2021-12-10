@@ -160,6 +160,13 @@ header {
 
 }
 
+.btn-terms{
+border: none;
+color: rgb(39, 134, 172);
+font-style: italic;
+background-color: rgb(226, 226, 226);
+}
+
 /* 
  * FOOTER
  * ******************* */
