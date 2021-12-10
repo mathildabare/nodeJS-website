@@ -1,20 +1,28 @@
-//MODULES
+/*
+ * Router.js
+ * ********* */ 
+
+// MODULES
 const express = require('express')
 const router = express.Router()
 
-//CONTROLLERS
-const HomeController = require('./HomeController');
-const ContactController = require('.Contact/Controller');
+// CONTROLLERS
+const HomeController = require('./controllers/HomeController');
+const ContactController = require('./controllers/ContactController');
 
-//MIDDLEWARES
+// MIDDLEWARES
 
 
-//ROUTES
-
+// ROUTES
 router.route('/')
     .get(HomeController.homepage);
 
 router.route('/contact')
     .get(ContactController.contactpage);
 
+// /ROUTES
+
+
+
+// Export de notre router
 module.exports = router
