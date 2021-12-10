@@ -12,15 +12,22 @@ require('dotenv').config()
 // Import Module
 const express = require('express')
 const app = express()
-const {engine} = require('express-handlebars')
+const {
+    engine
+} = require('express-handlebars')
 const port = process.env.PORT || 3003
 
 
 // Configuration Handlebars
 app.set('view engine', 'hbs')
+
+
 app.engine('hbs', engine({
     extname: 'hbs',
-    defaultLayout: 'main'
+    defaultLayout: 'main',
+    adminLayout: 'adminLayout'
+
+
 }))
 
 // Gestion de la route pour accèder à mes fichiers static
