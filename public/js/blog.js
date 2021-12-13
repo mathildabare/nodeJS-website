@@ -27,7 +27,7 @@ function filterCards(e) {
     listCard = document.getElementById('listCard')
     //console.log(listCard);
 
-    card = listCard.getElementsByTagName('div')
+    card = listCard.getElementsByTagName('a', 'div')
     //console.log(card);
 
 

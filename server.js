@@ -26,8 +26,6 @@ app.engine('hbs', engine({
     extname: 'hbs',
     defaultLayout: 'main',
     adminLayout: 'adminLayout'
-
-
 }))
 
 // Gestion de la route pour accèder à mes fichiers static

@@ -198,6 +198,16 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
+.link-card {
+color: black;
+text-decoration: none;
+}
+
+.link-card:hover {
+    color: black;
+}
+
+
 /* 
  * FOOTER
  * ******************* */
