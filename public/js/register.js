@@ -4,6 +4,7 @@
 
 console.log('Register JS');
 
+
 /******  Déclarations Constantes ********/
 
 // Check Conditions Générales
@@ -30,8 +31,13 @@ const pwConfirm = document.getElementById('pw-confirm')
 
 registerBtn.addEventListener('click', function (e) {
     if (pw.value !== pwConfirm.value) {
-        e.preventDefault(), warnMessage.innerText = 'Passwords are different', console.log('different password');
+        e.preventDefault(), warnMessage.innerText = 'Passwords are different', console.log('different password'), pw.style.border = "1px solid red"
+        pwConfirm.style.border = "1px solid red";
+    } else if (pw.value === "") {
+        e.preventDefault(), warnMessage.innerText = 'Password is empty', console.log('empty password'), pw.style.border = "1px solid red", pwConfirm.style.border = "";
     } else if (!cg.checked) {
-        e.preventDefault(), warnMessage.innerText = 'You have to accept the terms of use to continue.'
+        e.preventDefault(), warnMessage.innerText = 'You have to accept the terms of use to continue.',pw.style.border = "", pwConfirm.style.border = "";
     }
 })
+
+
