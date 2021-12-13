@@ -16,7 +16,7 @@ warnMessage.style.color = 'red'
 warnMessage.style.fontSize = '8pt'
 
 // Submit Button
-const registerBtn = document.getElementById('register-btn')
+const submitBtn = document.getElementById('submit-btn')
 
 // Mot de Passe
 const pw = document.getElementById('pw')
@@ -29,7 +29,7 @@ const pwConfirm = document.getElementById('pw-confirm')
 
 /******  Conditions  ********/
 
-registerBtn.addEventListener('click', function (e) {
+submitBtn.addEventListener('click', function (e) {
     if (pw.value !== pwConfirm.value) {
         e.preventDefault(), warnMessage.innerText = 'Passwords are different', console.log('different password'), pw.style.border = "1px solid red"
         pwConfirm.style.border = "1px solid red";
