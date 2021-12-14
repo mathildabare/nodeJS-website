@@ -14,56 +14,77 @@ const LogController = require('./controllers/LogController')
 const AdminController = require('./controllers/AdminController')
 
 /** MIDDLEWARES **/
-const mdl = require('./controllers/middleware/hey.js')
 
 /** ROUTES **/
-
 // HOME
 router.route('/')
-    .get(HomeController.homepage);
+    .get(HomeController.homepage)
 
+router
+    .route("/home")
+    .post(HomeController.createMessage)
+
+    .post(HomeController.logData)
 
 /*  ********************  */
+
 
 // SOCIETY
 router.route('/society')
     .get(ContactController.societypage);
 
 router.route('/contact')
-    .get(ContactController.contactpage);
+    .get(ContactController.contactpage)
+    .post(ContactController.createMessage);
 
 
 /*  ********************  */
+
+
 
 // BLOG
 router.route('/blog')
-    .get(BlogController.blogpage);
+    .get(BlogController.blogpage)
+    .post(BlogController.createArticle)
+
 
 router.route('/blogID')
-    .get(BlogController.blogIDpage);
+    .get(BlogController.blogIDpage)
+    .post(BlogController.createMessage)
 
 
 /*  ********************  */
+
+
 
 // AUTHENTICATION
 router.route('/login')
     .get(LogController.loginpage);
 
+
 router.route('/register')
-    .get(LogController.registerpage);
+    .get(LogController.registerpage)
+    .post(LogController.createAccount)
 
 router.route('/newPW')
-    .get(LogController.newpasswordpage);
+    .get(LogController.newpasswordpage)
+    .post(LogController.resetPassword)
 
 router.route('/forgotPW')
-    .get(LogController.forgotpasswordpage);
+    .get(LogController.forgotpasswordpage)
+    .post(LogController.forgotPassword)
+
+
 
 
 /*  ********************  */
 
+
+
 // ADMIN
 router.route('/admin')
-    .get(AdminController.get);
+    .get(AdminController.get)
+
 
 /** /ROUTES **/
 

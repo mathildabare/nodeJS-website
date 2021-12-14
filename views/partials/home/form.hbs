@@ -1,6 +1,6 @@
-{{!-- 
-    Partial: Formulaire
- --}}
+{{!--
+Partial: Formulaire
+--}}
 
 <section class="contact container">
     <div class="row">
@@ -20,21 +20,31 @@
                 </div>
             </div>
 
-            <form>
 
                 {{!-- FORMULAIRE --}}
 
+
+            <form action="/home" method="post">
                 <div class="row">
                     <div class="col-md-6">
                         <div class="contact-form">
                             <label class="form-label" for="name">Name</label>
-                            <input class="form-control" type="text" id="name" placeholder="Add name">
+                            <input class="form-control"
+                            name="Name"
+                            type="text"
+                            id="input-name"
+                            placeholder="Add name">
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="contact-form">
                             <label class="form-label" for="email">Mail</label>
-                            <input class="form-control" type="mail" id="email" placeholder="Add mail">
+                            <input
+                            name="Mail"
+                            class="form-control"
+                            type="mail"
+                            id="input-mail"
+                            placeholder="Add mail">
                         </div>
                     </div>
                     <div class="contact-form">
@@ -48,8 +58,12 @@
                     </div>
                     <div class="contact-form">
                         <label class="form-label">Message</label>
-                        <textarea id="message" rows="2" class="contact-message"></textarea>
-                        <button class="btn btn-red">Send</button>
+                        <textarea
+                        name="Message"
+                        id="textarea-message"
+                        rows="2"
+                        class="contact-message"></textarea>
+                        <button type="submit" class="btn btn-red">Send</button>
                     </div>
                 </div>
             </form>

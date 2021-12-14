@@ -2,7 +2,6 @@
  * Controller: ADMIN
  * **************** */
 
-
 // Admin
 module.exports = {
   get: (req, res) => {

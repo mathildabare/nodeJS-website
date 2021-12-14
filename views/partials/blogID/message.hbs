@@ -6,14 +6,22 @@ Partial : Message
     <div class="container">
         <hr>
         <div class="row">
-            <form action="">
+            <form action="/blogID" method="post">
                 <div class="contact-form">
-                    <label class="form-label" for="message">Name</label>
-                    <input class="form-control" type="text">
+                    <label class="form-label" for="message">Username</label>
+                    <input
+                    name="name"
+                    class="form-control"
+                    id="input-username"
+                    type="text">
                 </div>
                 <div class="contact-form">
                     <label class="form-label" for="message">Message</label>
-                    <textarea id="message" rows="4" class="contact-message form-control"></textarea>
+                    <textarea
+                    name="message"
+                    id="textarea-message"
+                    rows="4"
+                    class="contact-message form-control"></textarea>
                 </div>
                 <div class="row">
                     <div class="contact-form">

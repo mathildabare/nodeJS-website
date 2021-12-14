@@ -7,20 +7,32 @@ Partial: Reset Password
         <div class="mt-5 mb-5">
             <h2>Reset Password</h2>
         </div>
-        <div class="col-md-12">
-            <div class="contact-form mb-3">
-                <input class="form-control" type="text" id="pw" placeholder="New Password">
-            </div>
-            <div class="contact-form mb-3">
-                <input class="form-control" type="mail" id="pwConfirm" placeholder="Confirm Password">
-            </div>
+        <form action="/newPW" method="post">
             <div class="col-md-12">
-                <p id="prevent"> </p>
+                <div class="contact-form mb-3">
+                    <input
+                    name="new password"
+                    class="form-control"
+                    type="text"
+                    id="pw"
+                    placeholder="New Password">
+                </div>
+                <div class="contact-form mb-3">
+                    <input
+                    name="confirm password"
+                    class="form-control"
+                    type="mail"
+                    id="pwConfirm"
+                    placeholder="Confirm Password">
+                </div>
+                <div class="col-md-12">
+                    <p id="prevent"> </p>
+                </div>
+                <div class="col-md-2">
+                    <a id="submit-btn" href="/login"><button class="btn-log">Submit</button></a>
+                </div>
             </div>
-            <div class="col-md-2">
-                <a id="submit-btn" href="/login"><button class="btn-log">Submit</button></a>
-            </div>
-        </div>
+        </form>
     </div>
 </section>
 

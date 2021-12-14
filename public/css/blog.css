@@ -84,19 +84,6 @@ section {
     margin-bottom: 10px;
 }
 
-
-header {
-
-    background-image:
-        linear-gradient(to right, rgba(235, 235, 235, 0.4), rgba(133, 131, 131, 0.6)),
-        url(../imgs/head/snow-head.jpeg);
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-
-
 /** titles **/
 
 .homeTitle {
@@ -169,10 +156,11 @@ header {
 .card-details {
     background-color: rgb(221, 221, 221);
     border-radius: 10px;
-    height: 40vh;
+    height: 50vh;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
+    padding: 5px;
 }
 
 .card-details:hover {
@@ -182,7 +170,8 @@ header {
 }
 
 .card-details h4 {
-    font-size: 100%;
+    font-size: 80%;
+    font-weight: 400;
 }
 
 .card-details p {
